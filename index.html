@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <a href="#" class="logo"> 👨‍🎓 NVN_Portfolio</a>
         <nav class="navbar">
             <a href="#">HOME</a>
@@ -24,10 +24,12 @@
                 </div>
             </div>
             <a href="#contact">CONTACT</a>
+            <a href="#" id="dark-mode-toggle"><i class="fas fa-moon"></i></a>
         </nav>
     </header>
+
     <section class="hero">
-        <img src="nvn.jpeg" alt="Your Photo" class="profile-photo">
+        <img src="nvn.jpeg" alt="Your Photo" class="profile-photo" loading="lazy">
         <h1 class="typewriter" id="typewriter"></h1>
 
         <div class="download-buttons">
@@ -35,113 +37,109 @@
             <a href="NeerajResume.pdf" download="VNV_Neeraj_Resume.pdf" class="btn">Resume</a>
         </div>
     </section>
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Passionate web developer proficient in front-end and back-end technologies with a keen interest in machine learning applications. Skilled in creating responsive and visually appealing websites while leveraging frameworks. Eager to integrate machine learning algorithms to enhance user experiences and solve complex problems.</p>
-    </section>
 
-    <!-- <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <p><b>Languages</b>: C, Python, Java, C#</p>
-        <p><b>Web Technologies</b>: HTML, CSS, JavaScript, ReactJs, AngularJs, UI/UX</p>
-        <p><b>Database Systems</b>: phpMyAdmin, MySQL, MongoDB</p>
-        <p><b>Tools</b>: Figma , LaTeX, Eclipse, Anaconda, Kali Linux, Microsoft Office</p>
-    </section> -->
+    <section id="about" class="about">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p><i class="fas fa-quote-left"></i> <strong>Passionate</strong> web developer proficient in front-end and back-end technologies with a keen interest in <strong>machine learning applications</strong>. Skilled in creating <em>responsive</em> and visually appealing websites while leveraging frameworks. Eager to integrate machine learning algorithms to enhance user experiences and solve complex problems. <i class="fas fa-quote-right"></i></p>
+    </section>
 
     <section id="skills" class="skills">
-        <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-c"></i> <span>C</span></li>
-                <li><i class="fab fa-python"></i> <span>Python</span></li>
-                <li><i class="fab fa-java"></i> <span>Java</span></li>
-                <li><i class="fab fa-microsoft"></i> <span>C#</span></li>
-                <li><i class="fab fa-html5"></i> <span>HTML</span></li>
-                <li><i class="fab fa-css3-alt"></i> <span>CSS</span></li>
-                <li><i class="fab fa-js-square"></i> <span>JavaScript</span></li>
-                <li><i class="fab fa-react"></i> <span>ReactJs</span></li>
-                <li><i class="fab fa-angular"></i> <span>AngularJs</span></li>
-                <li><i class="fas fa-paint-brush"></i> <span>UI/UX</span></li>
-                <li><i class="fas fa-database"></i> <span>MySQL</span></li>
-                <li><i class="devicons devicons-mongodb"></i> <span>MongoDB</span></li>
-                <li><i class="fas fa-server"></i> <span>phpMyAdmin</span></li>
-                <li><i class="devicons devicons-java"></i> <span>Latex</span></li>
-                <li><i class="fas fa-code"></i> <span>Eclipse</span></li>
-                <li><i class="fab fa-python"></i> <span>Anaconda</span></li>
-                <li><i class="devicons devicons-linux"></i> <span>Kali Linux</span></li>
-                <li><i class="fab fa-figma"></i> <span>Figma</span></li>
-            </ul>
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fas fa-c"></i> <span>C</span></li>
+            <li><i class="fab fa-python"></i> <span>Python</span></li>
+            <li><i class="fab fa-java"></i> <span>Java</span></li>
+            <li><i class="fab fa-microsoft"></i> <span>C#</span></li>
+            <li><i class="fab fa-html5"></i> <span>HTML</span></li>
+            <li><i class="fab fa-css3-alt"></i> <span>CSS</span></li>
+            <li><i class="fab fa-js-square"></i> <span>JavaScript</span></li>
+            <li><i class="fab fa-react"></i> <span>ReactJs</span></li>
+            <li><i class="fab fa-angular"></i> <span>AngularJs</span></li>
+            <li><i class="fas fa-paint-brush"></i> <span>UI/UX</span></li>
+            <li><i class="fas fa-database"></i> <span>MySQL</span></li>
+            <li><i class="devicons devicons-mongodb"></i> <span>MongoDB</span></li>
+            <li><i class="fas fa-server"></i> <span>phpMyAdmin</span></li>
+            <li><i class="devicons devicons-latex"></i> <span>Latex</span></li>
+            <li><i class="fas fa-code"></i> <span>Eclipse</span></li>
+            <li><i class="fab fa-python"></i> <span>Anaconda</span></li>
+            <li><i class="devicons devicons-linux"></i> <span>Kali Linux</span></li>
+            <li><i class="fab fa-figma"></i> <span>Figma</span></li>
+        </ul>
     </section>
-    
+
     <section id="portfolio" class="portfolio">
-        <h2>Projects</h2>
-        <div id="nn">
-            <h3>Online Market Shopping</h3>
+        <h2><i class="fas fa-briefcase"></i> Projects</h2>
+        <div id="nn" class="project">
+            <h3><i class="fas fa-shopping-cart"></i> Online Market Shopping</h3>
             <p>This project aims to develop an online market shopping platform that leverages machine learning to enhance the shopping experience. It includes features such as personalized product recommendations, product sentiment analysis, and real-time inventory management.</p>
         </div>
-        <div id="vv">
-            <h3>Medico Vita</h3>
-            <p>The project aims to develop Medico Vita, an integrated healthcare platform fostering seamless interactions between patients and healthcare professionals. Features include online doctor consultations, prescription management, and live seminars.</p>
+        <div id="vv" class="project">
+            <h3><i class="fas fa-heartbeat"></i> Medico Vita</h3>
+            <p>The project aims to develop Medico Vita, an integrated healthcare platform fostering seamless interactions between patients and healthcare professionals. Features include online doctor consultations, prescription management, and live seminars.The algorithms helps to allocate the best doctors for the disease that you entered.</p>
         </div>
-        <div id="nmn">
-            <h3>Attendance Portal</h3>
-            <p>Developed a comprehensive attendance management system utilizing HTML, CSS, and JavaScript. It records individual attendance and includes a feature for marking and tracking academic performance, showcasing proficiency in front-end web development.</p>
+        <div id="nmn" class="project">
+            <h3><i class="fas fa-check-circle"></i> Attendance Portal</h3>
+            <p>Developed a comprehensive attendance management system utilizing HTML, CSS, and JavaScript. It records individual attendance and includes a feature for marking and tracking academic performance, showcasing proficiency in front-end web development.The Algorithm analysis the marks , attendence and make sure to allocate the ranks based on the bunch of clusters.</p>
         </div>
-        <div id="nmnn">
-            <h3>Agnit Robot</h3>
-            <p>Developed and implemented an Agnit robot within a UI/UX application, enhancing user interaction and automation.
-                Designed intuitive user interfaces for seamless interaction with the Agnit robot, improving user engagement.</p>
+        <div id="nmnn" class="project">
+            <h3><i class="fas fa-robot"></i> Agnit Robot</h3>
+            <p>Developed and implemented an Agnit robot within a UI/UX application, enhancing user interaction and automation. Designed intuitive user interfaces for seamless interaction with the Agnit robot, improving user engagement.</p>
+        </div>
+    </section>
 
-    </section>
     <section id="experience" class="experience">
-        <h2>Work Experience</h2>
-        <p><b>Cyber Security Intern (Skill Dzire Virtual) -  May 2023 - Jun 2023</b>:    
-            <br>Learned basics of Cryptography , Cloud Computing, Automation Testing<br>
-                Learned about Malware Threats , IDS, Firewalls, Honeypots 
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <p><i class="fas fa-shield-alt"></i> <b>Cyber Security Intern (Skill Dzire Virtual) -  May 2023 - Jun 2023</b>:    
+            <br>Learned basics of Cryptography, Cloud Computing, Automation Testing
+            <br>Learned about Malware Threats, IDS, Firewalls, Honeypots 
         </p>
-        <p><b>Machine Learning Intern(ACITE Virtual Internship Virtual) -  Sep 2023 - Oct 2023</b>:
-            <br>Learned basics about Data Analysis, Data Visualization , Data Cleaning , Data Interpretation,PyTorch, scikit-learn
-            <br> Learned about Predictive Analytics , Hypothesis Testing, linear algebra and calculus.
+        <p><i class="fas fa-brain"></i> <b>Machine Learning Intern (ACITE Virtual Internship) -  Sep 2023 - Oct 2023</b>:
+            <br>Learned basics about Data Analysis, Data Visualization, Data Cleaning, Data Interpretation, PyTorch, scikit-learn
+            <br> Learned about Predictive Analytics, Hypothesis Testing, linear algebra, and calculus.
         </p>
-        <p><b>Hexagon Capability Center(MentorShip Programme) - Jun 2024 - Jul 2024</b>:<br>
-            Completed a mentorship program at Hexagon Company, where I gained proficiency in Programming Orientation,<br>
-            Visual Studio and .NET Basics, C# Basics and Memory Fundamentals, OOP, Classes, and Abstraction, as well as
-            Application Fine-Tuning in C#.
+        <p><i class="fas fa-cogs"></i> <b>Hexagon Capability Center (Mentorship Program) - Jun 2024 - Jul 2024</b>:<br>
+            Completed a mentorship program at Hexagon Company, where I gained proficiency in Programming Orientation, Visual Studio and .NET Basics, C# Basics and Memory Fundamentals, OOP, Classes, and Abstraction, as well as Application Fine-Tuning in C#.
+        </p>
     </section>
+
     <section id="courses" class="courses">
-        <h2>Online Courses</h2>
-        <p><b>ISRO</b>:<br>OverviewRemote Sensing Technology (Mar 2023) , Geospatial Technology for Digital Agriculture (Jul 2024) </p>
-        <p><b>NPTEL</b>:<br> The Joy of Computing Using Python (May 2021), Programming in Java (May 2022), Psychology of Learning
-            (Dec 2023), privacy and Security in Online Social Media (May 2024)</p>
-        <p><b>Coursera:</b><br>Google Data Analytic (May 2023)</p>
+        <h2><i class="fas fa-graduation-cap"></i> Online Courses</h2>
+        <p><i class="fas fa-satellite"></i> <b>ISRO</b>:<br>Overview Remote Sensing Technology (Mar 2023), Geospatial Technology for Digital Agriculture (Jul 2024)</p>
+        <p><i class="fas fa-laptop-code"></i> <b>NPTEL</b>:<br>The Joy of Computing Using Python (May 2021), Programming in Java (May 2022), Psychology of Learning (Dec 2023), Privacy and Security in Online Social Media (May 2024)</p>
+        <p><i class="fas fa-chart-line"></i> <b>Coursera:</b><br>Google Data Analytics (May 2023)</p>
     </section>
+
     <section id="achievements" class="achievements">
-        <h2>Achievements</h2>
-        <p><b> Secured 2<sup>nd</sup> in <i>TechTitans</i> at TECHNIZEN held by ACM Student Chapter of R.V.R& J.C College of Engineering</b></p>
-        <p><b>Secured 3<sup>rd</sup> in <i>PCODE</i> at TECHNIZEN held by ACM Student Chapter of R.V.R& J.C College of Engineering</b> </p>
-        <p><b>Recieved Gold Medal in Indian National Talent Search Olympiad </b></p>
+        <h2><i class="fas fa-trophy"></i> Achievements</h2>
+        <p><i class="fas fa-medal"></i> <b>Secured 2<sup>nd</sup> in <i>TechTitans</i> at TECHNIZEN held by ACM Student Chapter of R.V.R& J.C College of Engineering</b></p>
+        <p><i class="fas fa-award"></i> <b>Secured 3<sup>rd</sup> in <i>PCODE</i> at TECHNIZEN held by ACM Student Chapter of R.V.R& J.C College of Engineering</b> </p>
+        <p><i class="fas fa-star"></i> <b>Received Gold Medal in Indian National Talent Search Olympiad </b></p>
     </section>
+
     <section id="responsibility" class="responsibility">
-        <h2>Positions of Responsibility</h2>
-        <p><b>Have been a part of the organizing team and test preparation team of MEDHANVESH, Aptitutde Test, organized
-            under the banner ISTE Student Chapter of R.V.R & J.C College of Engineering.</b></p>
-        <p><b>Have successfully organized the Invincible of SOIREE contenst, under the CIS’SOIREE event at COLORIDO
-            2K24 of R.V.R & J.C College of Engineering</b></p>
+        <h2><i class="fas fa-user-tie"></i> Positions of Responsibility</h2>
+        <p><i class="fas fa-people-carry"></i> <b>Organizing team and test preparation team of MEDHANVESH, Aptitude Test, under ISTE Student Chapter of R.V.R & J.C College of Engineering.</b></p>
+        <p><i class="fas fa-users"></i> <b>Organized the Invincible of SOIREE contest, under the CIS’SOIREE event at COLORIDO 2K24 of R.V.R & J.C College of Engineering</b></p>
     </section>
+
     <section id="extra" class="extra">
-        <h2>Additional Information</h2>
-        <p><b>Hobbies:</b> Science fiction movies, music, cooking, playing guitar & piano</p>
-        <p><b>Languages Known:</b> English, Telugu, Hindi</p>
+        <h2><i class="fas fa-plus-circle"></i> Additional Information</h2>
+        <p><i class="fas fa-music"></i> <b>Hobbies:</b> Science fiction movies, music, cooking, playing guitar & piano</p>
+        <p><i class="fas fa-language"></i> <b>Languages Known:</b> English, Telugu, Hindi</p>
     </section>
+
     <section id="contact" class="contact">
-        <h2>Contact</h2>
+        <h2><i class="fas fa-envelope-open-text"></i> Contact</h2>
         <p><i class="fas fa-envelope"></i> vnvneeraj18@gmail.com</p>
-        <p><i class="fas fa-phone"></i>  91+ 6309321875</p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nvn18" target="_blank"> in/nvn18</a></p>
+        <p><i class="fas fa-phone"></i> +91 6309321875</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nvn18" target="_blank">in/nvn18</a></p>
         <p><i class="fab fa-github"></i> <a href="https://www.github.com/nvn18" target="_blank">nvn18</a></p>
     </section>
+
     <footer class="footer">
-        <p>© 2024 V Naga Venkata Neeraj| All rights reserved.</p>
+        <p>© 2024 V Naga Venkata Neeraj | All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
