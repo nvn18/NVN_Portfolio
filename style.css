@@ -1,5 +1,76 @@
 /* Existing CSS remains unchanged */
 
+:root {
+    /* Light Mode Variables */
+    --bg-color: linear-gradient(to right, #ff6a00, #ee0979); /* Neon gradient */
+    --text-color: black;
+    --header-bg-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    --link-color: #00ffcc; /* Neon teal */
+    --button-bg-color: #ff007f; /* Neon pink */
+}
+
+body {
+    background-image: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Header, footer, and section styles */
+.header, .footer, section {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+}
+
+/* Buttons */
+.download-buttons .btn {
+    background-color: var(--button-bg-color);
+    color: black;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(to right, #1e1e1e, #3b3b3b); /* Dark neon gradient */
+    color: black;
+}
+
+body.dark-mode .header,
+body.dark-mode .footer,
+body.dark-mode section {
+    background-color: rgba(50, 50, 50, 0.8); /* Dark transparent background for sections */
+    color: black; 
+}
+
+body.dark-mode a {
+    color: #00ffcc; /* Neon teal for links in dark mode */
+}
+
+body.dark-mode .download-buttons .btn {
+    background-color: #ff007f; /* Neon pink for buttons in dark mode */
+    color: black;
+}
+
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: black; /* Ensuring all text is white */
+}
+body.dark-mode .footer p
+{
+    color:white;
+}
+ 
+
+
+
+
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 body {
@@ -95,7 +166,7 @@ body {
 }
 
 .hero img {
-    height: 200px;
+    height: 250px;
     border: 1px solid black;
     border-radius: 50%;
     position: absolute;

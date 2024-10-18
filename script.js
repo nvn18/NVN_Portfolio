@@ -30,5 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(type, 900);
         }
     }
+
+    // Dark Mode Toggle
+    const modeBtn = document.getElementById('mode-btn');
+    modeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            modeBtn.innerHTML = '<i class="fa fa-moon"></i>'; // Change to sun icon for light mode
+        } else {
+            modeBtn.innerHTML = '<i class="fa fa-sun"></i>'; // Change back to moon icon for dark mode
+        }
+    });
+
     type();
 });
