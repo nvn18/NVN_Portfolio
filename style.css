@@ -46,11 +46,11 @@ body.dark-mode section {
 }
 
 body.dark-mode a {
-    color: #00ffcc; /* Neon teal for links in dark mode */
+    color: #fd8f00; /* Neon teal for links in dark mode */
 }
 
 body.dark-mode .download-buttons .btn {
-    background-color: #ff007f; /* Neon pink for buttons in dark mode */
+    background-color: #d8df14; /* Neon pink for buttons in dark mode */
     color: black;
 }
 
@@ -67,7 +67,11 @@ body.dark-mode .footer p
 }
  
 
-
+.project a
+{
+    text-decoration: none;
+    color:black;
+}
 
 
 
